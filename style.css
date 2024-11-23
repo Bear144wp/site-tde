@@ -1,0 +1,194 @@
+/* Reset básico - Remover margens, padding e box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definição de fontes */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F7F7F7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Estilo dos cabeçalhos */
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #0066CC;
+}
+
+/* Centraliza o conteúdo de cada página */
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilo do Header */
+header {
+    background-color: #0066CC;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navegação */
+header nav ul {
+    list-style: none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Hero */
+.hero {
+    background-color: #FF9900;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cta-button:hover {
+    background-color: #222;
+}
+
+/* Seção de Features (Desafios e Tecnologias) */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.feature-card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+}
+
+/* Padronizando as imagens */
+.feature-card img {
+    width: 100%; /* Largura total do espaço disponível */
+    height: 200px; /* Tamanho fixo de altura para todas as imagens */
+    object-fit: cover; /* Faz a imagem cobrir totalmente o espaço sem distorcer */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Estilo do Formulário de Contato */
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-form div {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.contact-form button {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 15px;
+    margin-top: 15px;
+    background-color: #FF9900;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #F57C00;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        width: 90%;
+    }
+}
